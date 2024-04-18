@@ -19,14 +19,10 @@
 html,
 body {
   width: 100%;
-  height: 100%;
 }
 
 body {
   background: var(--charcoal-grey);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 li {
@@ -39,8 +35,12 @@ li {
 /* || FORM */
 
 .sign-up {
-  width: min(90%, 928px);
-  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  width: min(94%, 928px);
+  margin: 4rem 0;
+  padding: 1.5rem 1.5rem 1.3rem 2rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
   color: var(--dark-slate-grey);
   border-radius: 2.2rem;
   background: var(--white);
@@ -119,9 +119,12 @@ li {
 
 .success {
   width: 504px;
-  height: 520px;
   margin: auto;
-  padding: 3rem 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem 4rem 4rem;
   border-radius: 2.2rem;
   background: var(--white);
 }
@@ -162,11 +165,6 @@ li {
 }
 
 @media (max-width: 1000px) {
-  html,
-  body {
-    height: auto;
-  }
-
   .sign-up,
   .success {
     flex-direction: column;
@@ -236,7 +234,12 @@ li {
   }
 
   .success {
+    height: auto;
     padding: 2.5rem 3.5rem 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .success__img {
@@ -259,6 +262,6 @@ li {
 
 @media (max-width: 400px) {
   .success {
-    padding: 2.5rem 1.5rem 4rem;
+    padding: 4rem 1.5rem;
   }
 }

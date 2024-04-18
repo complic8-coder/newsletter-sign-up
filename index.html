@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
 
     <title>
@@ -19,82 +19,83 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Sign-up form start -->
-
-    <section class="sign-up" style="display: flex">
-      <picture>
-        <source
-          srcset="./images/illustration-sign-up-mobile.svg"
-          media="(max-width: 600px)"
-        />
-        <img
-          src="./images/illustration-sign-up-desktop.svg"
-          alt="A desktop window with statistics"
-          class="sign-up__img"
-        />
-      </picture>
-      <div class="content">
-        <h1 class="header sign-up__header">Stay updated!</h1>
-        <p class="sign-up__para">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
-        <ul class="sign-up__list">
-          <li>
-            <img src="./images/icon-list.svg" class="list__bullet" />
-            <span class="list__item"
-              >Product discovery and building what matters</span
-            >
-          </li>
-          <li>
-            <img src="./images/icon-list.svg" class="list__bullet" />
-            <span class="list__item"
-              >Measuring to ensure updates are a success</span
-            >
-          </li>
-          <li>
-            <img src="./images/icon-list.svg" class="list__bullet" />
-            <span class="list__item">And much more!</span>
-          </li>
-        </ul>
-
-        <form id="form">
-          <div class="form__top">
-            <label for="email-input" class="form__label">Email address</label>
-            <span class="email-error"></span>
-          </div>
-          <input
-            type="email"
-            name="email"
-            autocomplete="on"
-            placeholder="email@company.com"
-            class="form__input"
-            id="email-input"
-            required
+    <main>
+      <!-- Sign-up form start -->
+      <section class="sign-up" style="display: block">
+        <picture>
+          <source
+            srcset="./assets/images/illustration-sign-up-mobile.svg"
+            media="(max-width: 600px)"
           />
-          <button class="btn btn--sub" id="submitBtn">
-            Subscribe to monthly newsletter
-          </button>
-        </form>
-      </div>
-    </section>
+          <img
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt="A desktop window with statistics"
+            class="sign-up__img"
+          />
+        </picture>
+        <div class="content">
+          <h1 class="header sign-up__header">Stay updated!</h1>
+          <p class="sign-up__para">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="sign-up__list">
+            <li>
+              <img src="./assets/images/icon-list.svg" class="list__bullet" />
+              <span class="list__item"
+                >Product discovery and building what matters</span
+              >
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" class="list__bullet" />
+              <span class="list__item"
+                >Measuring to ensure updates are a success</span
+              >
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" class="list__bullet" />
+              <span class="list__item">And much more!</span>
+            </li>
+          </ul>
 
-    <!-- Sign-up form end -->
+          <form id="form">
+            <div class="form__top">
+              <label for="email-input" class="form__label">Email address</label>
+              <span class="email-error"></span>
+            </div>
+            <input
+              type="email"
+              name="email"
+              autocomplete="on"
+              placeholder="email@company.com"
+              class="form__input"
+              id="email-input"
+              required
+            />
+            <button class="btn btn--sub" id="submitBtn">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </section>
 
-    <!-- Success message start -->
+      <!-- Sign-up form end -->
 
-    <section class="success" style="display: none">
-      <img src="./images/icon-success.svg" class="success__img" />
+      <!-- Success message start -->
 
-      <h2 class="header success__header">Thanks for subscribing!</h2>
-      <p class="success__message">
-        A confirmation email has been sent to <b></b>. Please open it and click
-        the button inside to confirm your subscription.
-      </p>
+      <section class="success" style="display: none">
+        <img src="./assets/images/icon-success.svg" class="success__img" />
 
-      <button class="btn btn--dismiss">Dismiss message</button>
-    </section>
+        <h2 class="header success__header">Thanks for subscribing!</h2>
+        <p class="success__message">
+          A confirmation email has been sent to <b></b>. Please open it and
+          click the button inside to confirm your subscription.
+        </p>
 
-    <!-- Success message end -->
+        <button class="btn btn--dismiss">Dismiss message</button>
+      </section>
+
+      <!-- Success message end -->
+    </main>
 
     <script src="main.js"></script>
   </body>
