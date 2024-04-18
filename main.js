@@ -30,3 +30,10 @@ function openSuccessMessage() {
   success.style.display = "block";
   signUp.style.display = "none";
 }
+
+const dismissBtn = document
+  .querySelector(".btn--dismiss")
+  .addEventListener("click", () => {
+    signUp.style.display = "flex";
+    success.style.display = "none";
+  });
